@@ -1,0 +1,143 @@
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 30B 0.0s
+#1 transferring dockerfile: 679B 0.1s done
+#1 DONE 0.2s
+
+#2 [internal] load metadata for docker.io/library/node:24-alpine
+#2 DONE 2.3s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 32B
+#3 transferring context: 123B done
+#3 DONE 0.1s
+
+#4 [internal] load build context
+#4 DONE 0.0s
+
+#5 [deps 1/4] FROM docker.io/library/node:24-alpine@sha256:a34ab6d7f6f4813f4d0c5469d74685604b962fbdbf5793a7bc7b4998ecb867c8
+#5 resolve docker.io/library/node:24-alpine@sha256:a34ab6d7f6f4813f4d0c5469d74685604b962fbdbf5793a7bc7b4998ecb867c8 0.1s done
+#5 DONE 0.1s
+
+#4 [internal] load build context
+#4 transferring context: 677.47kB 0.1s done
+#4 DONE 0.3s
+
+#5 [deps 1/4] FROM docker.io/library/node:24-alpine@sha256:a34ab6d7f6f4813f4d0c5469d74685604b962fbdbf5793a7bc7b4998ecb867c8
+#5 DONE 0.5s
+
+#5 [deps 1/4] FROM docker.io/library/node:24-alpine@sha256:a34ab6d7f6f4813f4d0c5469d74685604b962fbdbf5793a7bc7b4998ecb867c8
+#5 sha256:60ef5f57e09d3f24d91cfd5547a102a028a7bd629f03e79409f53a202cf9df54 0B / 441B 0.2s
+#5 sha256:60ef5f57e09d3f24d91cfd5547a102a028a7bd629f03e79409f53a202cf9df54 441B / 441B 0.2s done
+#5 sha256:89a151fddb377af33d0dda6a24f40061bbde4b159f82c349fe01208baba8a84f 0B / 1.26MB 0.2s
+#5 sha256:b72829bc75b7701104d057fde78fe0aef6dc0c3eaf2423e7249e8a14c37ead57 0B / 57.38MB 0.2s
+#5 sha256:881fc932939efef04ca120ad44bbd2c0917851eb247aa4995428afb1e80ede17 0B / 3.85MB 0.2s
+#5 sha256:89a151fddb377af33d0dda6a24f40061bbde4b159f82c349fe01208baba8a84f 1.05MB / 1.26MB 2.9s
+#5 sha256:89a151fddb377af33d0dda6a24f40061bbde4b159f82c349fe01208baba8a84f 1.26MB / 1.26MB 3.4s done
+#5 sha256:b72829bc75b7701104d057fde78fe0aef6dc0c3eaf2423e7249e8a14c37ead57 3.15MB / 57.38MB 5.0s
+#5 sha256:881fc932939efef04ca120ad44bbd2c0917851eb247aa4995428afb1e80ede17 1.05MB / 3.85MB 4.8s
+#5 sha256:881fc932939efef04ca120ad44bbd2c0917851eb247aa4995428afb1e80ede17 2.10MB / 3.85MB 7.1s
+#5 sha256:881fc932939efef04ca120ad44bbd2c0917851eb247aa4995428afb1e80ede17 3.15MB / 3.85MB 8.9s
+#5 sha256:b72829bc75b7701104d057fde78fe0aef6dc0c3eaf2423e7249e8a14c37ead57 6.29MB / 57.38MB 9.5s
+#5 sha256:881fc932939efef04ca120ad44bbd2c0917851eb247aa4995428afb1e80ede17 3.85MB / 3.85MB 10.1s done
+#5 extracting sha256:881fc932939efef04ca120ad44bbd2c0917851eb247aa4995428afb1e80ede17
+#5 extracting sha256:881fc932939efef04ca120ad44bbd2c0917851eb247aa4995428afb1e80ede17 0.7s done
+#5 sha256:b72829bc75b7701104d057fde78fe0aef6dc0c3eaf2423e7249e8a14c37ead57 9.44MB / 57.38MB 12.3s
+#5 sha256:b72829bc75b7701104d057fde78fe0aef6dc0c3eaf2423e7249e8a14c37ead57 12.58MB / 57.38MB 14.9s
+#5 sha256:b72829bc75b7701104d057fde78fe0aef6dc0c3eaf2423e7249e8a14c37ead57 15.73MB / 57.38MB 17.7s
+#5 sha256:b72829bc75b7701104d057fde78fe0aef6dc0c3eaf2423e7249e8a14c37ead57 18.87MB / 57.38MB 20.4s
+#5 sha256:b72829bc75b7701104d057fde78fe0aef6dc0c3eaf2423e7249e8a14c37ead57 22.02MB / 57.38MB 23.0s
+#5 sha256:b72829bc75b7701104d057fde78fe0aef6dc0c3eaf2423e7249e8a14c37ead57 25.17MB / 57.38MB 25.7s
+#5 sha256:b72829bc75b7701104d057fde78fe0aef6dc0c3eaf2423e7249e8a14c37ead57 28.31MB / 57.38MB 28.4s
+#5 sha256:b72829bc75b7701104d057fde78fe0aef6dc0c3eaf2423e7249e8a14c37ead57 31.46MB / 57.38MB 30.8s
+#5 sha256:b72829bc75b7701104d057fde78fe0aef6dc0c3eaf2423e7249e8a14c37ead57 34.60MB / 57.38MB 33.3s
+#5 sha256:b72829bc75b7701104d057fde78fe0aef6dc0c3eaf2423e7249e8a14c37ead57 37.75MB / 57.38MB 35.9s
+#5 sha256:b72829bc75b7701104d057fde78fe0aef6dc0c3eaf2423e7249e8a14c37ead57 40.89MB / 57.38MB 39.5s
+#5 sha256:b72829bc75b7701104d057fde78fe0aef6dc0c3eaf2423e7249e8a14c37ead57 42.99MB / 57.38MB 44.6s
+#5 sha256:b72829bc75b7701104d057fde78fe0aef6dc0c3eaf2423e7249e8a14c37ead57 46.14MB / 57.38MB 47.3s
+#5 sha256:b72829bc75b7701104d057fde78fe0aef6dc0c3eaf2423e7249e8a14c37ead57 49.28MB / 57.38MB 50.1s
+#5 sha256:b72829bc75b7701104d057fde78fe0aef6dc0c3eaf2423e7249e8a14c37ead57 52.43MB / 57.38MB 52.8s
+#5 sha256:b72829bc75b7701104d057fde78fe0aef6dc0c3eaf2423e7249e8a14c37ead57 55.57MB / 57.38MB 55.7s
+#5 sha256:b72829bc75b7701104d057fde78fe0aef6dc0c3eaf2423e7249e8a14c37ead57 57.38MB / 57.38MB 57.0s done
+#5 extracting sha256:b72829bc75b7701104d057fde78fe0aef6dc0c3eaf2423e7249e8a14c37ead57
+#5 extracting sha256:b72829bc75b7701104d057fde78fe0aef6dc0c3eaf2423e7249e8a14c37ead57 4.3s done
+#5 DONE 61.9s
+
+#5 [deps 1/4] FROM docker.io/library/node:24-alpine@sha256:a34ab6d7f6f4813f4d0c5469d74685604b962fbdbf5793a7bc7b4998ecb867c8
+#5 extracting sha256:89a151fddb377af33d0dda6a24f40061bbde4b159f82c349fe01208baba8a84f
+#5 extracting sha256:89a151fddb377af33d0dda6a24f40061bbde4b159f82c349fe01208baba8a84f 0.3s done
+#5 DONE 62.1s
+
+#5 [deps 1/4] FROM docker.io/library/node:24-alpine@sha256:a34ab6d7f6f4813f4d0c5469d74685604b962fbdbf5793a7bc7b4998ecb867c8
+#5 extracting sha256:60ef5f57e09d3f24d91cfd5547a102a028a7bd629f03e79409f53a202cf9df54 0.1s done
+#5 DONE 62.2s
+
+#6 [deps 2/4] WORKDIR /app
+#6 DONE 0.5s
+
+#7 [deps 3/4] COPY package*.json ./
+#7 DONE 0.2s
+
+#8 [deps 4/4] RUN npm ci
+#8 8.678 
+#8 8.678 added 97 packages, and audited 98 packages in 8s
+#8 8.678 
+#8 8.678 18 packages are looking for funding
+#8 8.678   run `npm fund` for details
+#8 8.683 
+#8 8.683 found 0 vulnerabilities
+#8 8.689 npm notice
+#8 8.689 npm notice New major version of npm available! 11.19.1 -> 12.2.2
+#8 8.689 npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.2
+#8 8.689 npm notice To update run: npm install -g npm@12.2.2
+#8 8.689 npm notice
+#8 DONE 9.0s
+
+#9 [build 3/5] COPY --from=deps /app/node_modules ./node_modules
+#9 DONE 0.5s
+
+#10 [build 4/5] COPY . .
+#10 DONE 0.2s
+
+#11 [build 5/5] RUN npm run build && npm prune --omit=dev
+#11 1.446 
+#11 1.446 > visits-app@1.0.0 build
+#11 1.446 > tsc
+#11 1.446 
+#11 5.309 npm notice
+#11 5.309 npm notice New major version of npm available! 11.19.1 -> 12.2.2
+#11 5.309 npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.2
+#11 5.309 npm notice To update run: npm install -g npm@12.2.2
+#11 5.309 npm notice
+#11 9.057 
+#11 9.057 removed 15 packages, and audited 83 packages in 3s
+#11 9.058 
+#11 9.061 18 packages are looking for funding
+#11 9.068   run `npm fund` for details
+#11 9.077 
+#11 9.077 found 0 vulnerabilities
+#11 DONE 9.2s
+
+#12 [runtime 3/5] COPY --from=build --chown=node:node /app/dist ./dist
+#12 DONE 0.2s
+
+#13 [runtime 4/5] COPY --from=build --chown=node:node /app/node_modules ./node_modules
+#13 DONE 0.3s
+
+#14 [runtime 5/5] COPY --from=build --chown=node:node /app/package.json ./package.json
+#14 DONE 0.3s
+
+#15 exporting to image
+#15 exporting layers
+#15 exporting layers 0.9s done
+#15 exporting manifest sha256:05222925dde9b7b9f876afcef8b8f7b7012cf7d6ba900e8bd3f5e42155379e7b
+#15 exporting manifest sha256:05222925dde9b7b9f876afcef8b8f7b7012cf7d6ba900e8bd3f5e42155379e7b 0.1s done
+#15 exporting config sha256:3640053ff378ee913b3d4d7196d3f03cc035ea2567f0d3fcbdd28820d4d91c21 0.1s done
+#15 exporting attestation manifest sha256:068fcf26f51863fb9517b74af60a9dea75a94497f58c131be09a0bdeb52c5d8f 0.1s done
+#15 exporting manifest list sha256:185090b9032119e9c04be6bc11b9109bb1c78f79760846c801c653803f40d9ba
+#15 exporting manifest list sha256:185090b9032119e9c04be6bc11b9109bb1c78f79760846c801c653803f40d9ba 0.0s done
+#15 naming to docker.io/library/visits-app:multistage 0.0s done
+#15 unpacking to docker.io/library/visits-app:multistage
+#15 unpacking to docker.io/library/visits-app:multistage 124.3s done
+#15 DONE 125.6s

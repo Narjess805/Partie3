@@ -1,0 +1,84 @@
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 679B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/node:24-alpine
+#2 DONE 1.1s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 123B 0.0s done
+#3 DONE 0.1s
+
+#4 [internal] load build context
+#4 DONE 0.0s
+
+#5 [deps 1/4] FROM docker.io/library/node:24-alpine@sha256:a34ab6d7f6f4813f4d0c5469d74685604b962fbdbf5793a7bc7b4998ecb867c8
+#5 resolve docker.io/library/node:24-alpine@sha256:a34ab6d7f6f4813f4d0c5469d74685604b962fbdbf5793a7bc7b4998ecb867c8 0.1s done
+#5 DONE 0.1s
+
+#4 [internal] load build context
+#4 transferring context: 10.03kB 0.0s done
+#4 DONE 0.0s
+
+#6 [deps 2/4] WORKDIR /app
+#6 CACHED
+
+#7 [deps 3/4] COPY package*.json ./
+#7 CACHED
+
+#8 [deps 4/4] RUN npm ci
+#8 CACHED
+
+#9 [build 3/5] COPY --from=deps /app/node_modules ./node_modules
+#9 CACHED
+
+#10 [build 4/5] COPY . .
+#10 DONE 0.1s
+
+#11 [build 5/5] RUN npm run build && npm prune --omit=dev
+#11 1.544 
+#11 1.544 > visits-app@1.0.0 build
+#11 1.544 > tsc
+#11 1.544 
+#11 6.533 npm notice
+#11 6.533 npm notice New major version of npm available! 11.19.1 -> 12.2.2
+#11 6.533 npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.2
+#11 6.533 npm notice To update run: npm install -g npm@12.2.2
+#11 6.533 npm notice
+#11 10.90 
+#11 10.90 removed 15 packages, and audited 83 packages in 4s
+#11 10.90 
+#11 10.90 18 packages are looking for funding
+#11 10.90   run `npm fund` for details
+#11 10.91 
+#11 10.91 found 0 vulnerabilities
+#11 DONE 11.0s
+
+#6 [deps 2/4] WORKDIR /app
+#6 CACHED
+
+#12 [runtime 3/5] COPY --from=build --chown=node:node /app/dist ./dist
+#12 DONE 0.3s
+
+#13 [runtime 4/5] COPY --from=build --chown=node:node /app/node_modules ./node_modules
+#13 DONE 0.3s
+
+#14 [runtime 5/5] COPY --from=build --chown=node:node /app/package.json ./package.json
+#14 DONE 0.2s
+
+#15 exporting to image
+#15 exporting layers
+#15 exporting layers 0.7s done
+#15 exporting manifest sha256:3b2f47212e4813a99612390fe5050b9399395fb2028c06a6d81b08a4e697cd2c
+#15 exporting manifest sha256:3b2f47212e4813a99612390fe5050b9399395fb2028c06a6d81b08a4e697cd2c 0.0s done
+#15 exporting config sha256:983dc4e3252369304d0cca21dad555c88fe400cfed62fb02c3ab8b0d4df141c3 0.0s done
+#15 exporting attestation manifest sha256:f0faded06a72f9a968bc2a2c9e8c5a479c030bb985f62d2448073efac39172d9
+#15 exporting attestation manifest sha256:f0faded06a72f9a968bc2a2c9e8c5a479c030bb985f62d2448073efac39172d9 0.1s done
+#15 exporting manifest list sha256:1e5b20705d36b62bcf69ee49dc7a0aa0c62860d76236a0de027322fdf703b653 0.0s done
+#15 naming to docker.io/library/visits-app:multistage
+#15 naming to docker.io/library/visits-app:multistage 0.0s done
+#15 unpacking to docker.io/library/visits-app:multistage
+#15 unpacking to docker.io/library/visits-app:multistage 0.5s done
+#15 DONE 1.5s

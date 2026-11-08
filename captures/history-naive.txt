@@ -1,0 +1,19 @@
+IMAGE          CREATED       CREATED BY                                      SIZE      COMMENT
+df60b79771b6   2 hours ago   CMD ["node" "dist/server.js"]                   0B        buildkit.dockerfile.v0
+<missing>      2 hours ago   EXPOSE [3000/tcp]                               0B        buildkit.dockerfile.v0
+<missing>      2 hours ago   RUN /bin/sh -c npm run build # buildkit         1.41MB    buildkit.dockerfile.v0
+<missing>      2 hours ago   RUN /bin/sh -c npm install # buildkit           43.4MB    buildkit.dockerfile.v0
+<missing>      2 hours ago   COPY . . # buildkit                             111kB     buildkit.dockerfile.v0
+<missing>      2 hours ago   WORKDIR /app                                    8.19kB    buildkit.dockerfile.v0
+<missing>      3 days ago    CMD ["node"]                                    0B        buildkit.dockerfile.v0
+<missing>      3 days ago    ENTRYPOINT ["docker-entrypoint.sh"]             0B        buildkit.dockerfile.v0
+<missing>      3 days ago    COPY docker-entrypoint.sh /usr/local/bin/ # …   20.5kB    buildkit.dockerfile.v0
+<missing>      3 days ago    RUN /bin/sh -c set -ex   && export GNUPGHOME…   5.41MB    buildkit.dockerfile.v0
+<missing>      3 days ago    ENV YARN_VERSION=1.22.22                        0B        buildkit.dockerfile.v0
+<missing>      3 days ago    RUN /bin/sh -c ARCH= && dpkgArch="$(dpkg --p…   218MB     buildkit.dockerfile.v0
+<missing>      3 days ago    ENV NODE_VERSION=24.22.2                        0B        buildkit.dockerfile.v0
+<missing>      3 days ago    RUN /bin/sh -c groupadd --gid 1000 node   &&…   69.6kB    buildkit.dockerfile.v0
+<missing>      3 days ago    RUN /bin/sh -c set -ex;  apt-get update;  ap…   619MB     buildkit.dockerfile.v0
+<missing>      3 days ago    RUN /bin/sh -c set -eux;  apt-get update;  a…   194MB     buildkit.dockerfile.v0
+<missing>      3 days ago    RUN /bin/sh -c set -eux;  apt-get update;  a…   51.5MB    buildkit.dockerfile.v0
+<missing>      3 days ago    # debian.sh --arch 'amd64' out/ 'bookworm' '…   133MB     debuerreotype 0.17
