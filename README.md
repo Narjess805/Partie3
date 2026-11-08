@@ -335,7 +335,7 @@ Manifests:
   Platform:  linux/arm64
 ```
 
-![Manifest multi-arch](captures/buildx-manifest.png)
+
 
 *L'image est publiée pour `linux/amd64` et `linux/arm64`.*
 
@@ -389,7 +389,7 @@ sleep 20
 for i in $(seq 6); do curl -s http://localhost/ | jq -r .host; done
 ```
 
-![Reverse proxy](captures/reverse-proxy.png)
+
 
 *Les requêtes consécutives renvoient plusieurs `host` différents : Nginx répartit la charge entre les 3 réplicas.*
 
